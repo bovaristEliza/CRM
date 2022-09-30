@@ -1,0 +1,127 @@
+html, body{height: 100%; !important;}
+body{background: #eee; font-family: Helvetica, sans-serif; !important;}
+
+/*
+.animate{
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+*/
+
+.button{ display: inline-block; background:rgb(33, 141, 96); color:  rgb(0, 32, 36); padding: 20px ; border-radius:80px; text-decoration: none; margin: 10px;!important;}
+
+/*----------------------------------------------------------------
+header.jsp
+----------------------------------------------------------------*/
+
+.header{ !important;
+    background: rgb(100, 192, 154);
+
+}
+.logo{ float: left; display: block; padding: 10px; margin-top: 5px; !important; }
+
+.img{width:480px;height: 80px; !important;}
+
+
+.header__menu{ float: left; margin-left: 30px; padding: 2px; !important;}
+.header__menu__item{display: inline-block; !important}
+.header__menu__item a{color: rgb(0, 60, 116); display: block; padding: 10px;!important }
+.header__menu__item a:hover{background: rgb(33, 141, 96); border-radius: 80px;!important}
+
+.header__icon-bar{display: block; padding:10px;!important}
+.header__icon-bar span{display: block; height: 3px; width: 30px; background:rgb(0, 60, 116); margin-bottom: 5px;!important;}
+
+/*----------------------------------------------------------------
+cover
+----------------------------------------------------------------*/
+
+.cover{height: 80%;
+    background-image: url("https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-position: center center;
+    position: relative; /*contenitore relativo*/
+    padding-bottom: 80px;!important;
+}
+
+.cover__filter{
+    background:#000;
+    width:100%;
+    height:100%;
+    position: absolute; /*il div nel cont. relativo si posiziona in maniera assoluta e posso decidere sopra e sotto*/
+    z-index:0;
+    opacity: 0.5;!important;
+}
+
+.cover__caption{
+    display: table;
+    height:100%;
+    width:100%;
+    color: #fff;
+    position: relative;
+    padding:7% !important
+}
+
+.cover__caption__copy{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff ;!important;}
+
+.customer{
+    background-color: #eee;
+    max-width: fit-content;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding: 20px;
+    border-left: 7px solid #009688;
+    box-shadow: #1dad9a 0px 0px 0px 0px; !important;
+}
+
+
+.footer{ background:rgb(33, 141, 96); padding:30px; margin-top: 10px; text-align: center;}
+
+.project{ max-width:900px; margin:0px auto; margin-top:-80px; background-color:aquamarine; padding: 20px; position:relative; z-index: 1;}
+
+
+
+/* mediaquery dei tablet
+@media (max-width: 998px) {
+
+};
+
+mediaquery smartphone
+@media (max-width: 767px) {
+.header__icon-bar{display: block;}
+.header__menu{width: 100%; height: 0px; overflow: hidden;}
+.is-open{height:300px; overflow:auto;}
+};
+
+*/
+
+
+
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
